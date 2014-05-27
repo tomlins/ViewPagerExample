@@ -17,19 +17,19 @@ import static java.lang.Class.forName;
 public class TabsPagerAdapter extends FragmentPagerAdapter {
 
     public static final String TAG = "TabsPagerAdapter";
-    private String[] fragments;
+    private String[] sFragments;
 
     public TabsPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         Resources res = context.getResources();
-        fragments = res.getStringArray(R.array.fragment_clazzez);
+        sFragments = res.getStringArray(R.array.fragment_clazzez);
     }
 
     @Override
     public Fragment getItem(int position) {
         try {
-            Log.i(TAG, "Returning new instance of " + fragments[position]);
-            return (Fragment) forName(fragments[position]).newInstance();
+            Log.i(TAG, "Returning new instance of " + sFragments[position]);
+            return (Fragment) forName(sFragments[position]).newInstance();
         }
         catch (Exception x) {
         }
@@ -38,6 +38,6 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return fragments.length;
+        return sFragments.length;
     }
 }

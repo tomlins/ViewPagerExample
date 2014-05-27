@@ -17,9 +17,6 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     private TabsPagerAdapter mAdapter;
     private ActionBar actionBar;
 
-    // Tab titles
-    private String[] tabs = { "Top Rated", "Games", "Movies" };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +28,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         viewPager.setAdapter(mAdapter);
 
         actionBar = getActionBar();
+        assert actionBar != null;
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         actionBar.setHomeButtonEnabled(false);
         actionBar.setDisplayShowTitleEnabled(false);
