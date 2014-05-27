@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ViewPagerExample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Tabs for the different swipeable views -->
+    <string-array name="tab_headers">
+        <item>Games</item>
+        <item>Top Movies</item>
+        <item>Top Rated</item>
+        <item>Music</item>
+     </string-array>
+
+    <!-- Fragment classes. Must be in same order as tab_headers -->
+    <string-array name="fragment_clazzez">
+        <item>net.tomlins.viewpagerexample.fragment.GamesFragment</item>
+        <item>net.tomlins.viewpagerexample.fragment.MoviesFragment</item>
+        <item>net.tomlins.viewpagerexample.fragment.TopRatedFragment</item>
+        <item>net.tomlins.viewpagerexample.fragment.MusicFragment</item>
+    </string-array>
+
+</resources>
