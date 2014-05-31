@@ -12,7 +12,7 @@
         <item>Top Movies</item>
         <item>Top Rated</item>
         <item>Music</item>
-     </string-array>
+    </string-array>
 
     <!-- Fragment classes. Must be in same order as tab_headers -->
     <string-array name="fragment_clazzez">
@@ -21,5 +21,7 @@
         <item>net.tomlins.viewpagerexample.fragment.TopRatedFragment</item>
         <item>net.tomlins.viewpagerexample.fragment.MusicFragment</item>
     </string-array>
+
+    <string name="title_activity_splash">SplashActivity</string>
 
 </resources>
