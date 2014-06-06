@@ -16,4 +16,12 @@
         android:layout_centerInParent="true"
         android:src="@drawable/if_splash_logo" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One moment please..."
+        android:id="@+id/initTextView"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
